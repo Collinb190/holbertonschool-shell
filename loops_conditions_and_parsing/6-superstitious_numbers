@@ -1,22 +1,21 @@
 #!/usr/bin/env bash
-# displays numbers 1-20 with additional output using case statement
+# This script is displaying numbers and text in a loop based on conditions
 
-C=1
-
-while [ $C -lt 21 ]
+COUNT=1
+while [ $COUNT -lt 21 ]
 do
-	case $C in
+	case $COUNT in
 		4 )
-			echo $C
-			echo bad luck from China ;;
-		9 ) 
-			echo $C
-			echo bad luck from Japan ;;
-		17 ) 
-			echo $C
-			echo bad luck from Italy ;;
+			echo $COUNT
+			echo "bad luck from China" ;;
+		9 )
+			echo $COUNT
+			echo "bad luck from Japan" ;;
+		17 )
+			echo $COUNT
+			echo "bad luck from Italy" ;;
 		* )
-			echo $C ;;
+			echo $COUNT ;;
 	esac
-	$C=$(( C + 1 ))
+	COUNT=$(( COUNT + 1 ))
 done
