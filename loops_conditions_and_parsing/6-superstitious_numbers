@@ -2,13 +2,14 @@
 # displays numbers 1-20 with additional output using case statement
 
 C=1
+
 while [ $C -lt 21 ]
 do
 	case $C in
 		4 )
 			echo $C
 			echo bad luck from China ;;
-		5 ) 
+		9 ) 
 			echo $C
 			echo bad luck from Japan ;;
 		17 ) 
