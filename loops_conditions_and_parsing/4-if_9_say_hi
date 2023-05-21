@@ -3,7 +3,7 @@
 
 x=0
 
-while [ $x -lt 10 ]
+while [ $x -lt 11 ]
 do
 	if [ $x -eq 9 ]
 	then
